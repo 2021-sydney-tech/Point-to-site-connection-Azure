@@ -1,0 +1,21 @@
+Creates a self-signed root certificate & Create a client certificate
+
+I will use Azure PowerShell cmdlets on Windows 10.
+
+Step a: open open a Windows PowerShell console. It does not work in the Azure Cloud Shell. so I need to run it locally.
+Step b: Sign in using the Connect-AzAccount cmdlet.
+        For my case, the Powershell on my Windows does not does not recognised the name of a cmdlet, funtion, script fi operable program.
+        So I have to install the latest version of PowerShell available for your operating system.
+        
+        Follow this instruction to install latest version of PowerShellhttps://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-7.0.0
+
+        After than I will be able to sign in Azure portal
+
+Step c: Create a self-signed root certificate
+        Generate a client certificate
+        To view the certificate by opening certmgr.msc, or Manage User Certificates.
+
+    https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-point-to-site
+
+Step d: How to export certification
+    https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-creating-an-azure-point-to-site-vpn/ba-p/326264

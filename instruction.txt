@@ -1,0 +1,19 @@
+Create a Point-to-Site VPN connection in the Azure portal
+
+Step 1: Create a Virtual Network resource: vnetp2s (resource group name: VPN)
+
+Step 2: Create a Virtual Network Gateway resource: vnetgateway (this will take from 15min -30min for deployment time)
+Step 3: Creates a self-signed root certificate (read 'other-setup.txt')
+        Create a client certificate (read 'other-setup.txt')
+
+Step 4: Go to vnetgateway resource and configure Point-to-site now.
+        - Add IP address
+        - Turnel type: IKEv2 and SSTP (SSL)
+        - Authentication type: Azure certification
+        - Name: myrootcertificate
+        - Public certification data: need to copy the certification key and paste in here.
+        - Save it. It will take about 15min
+        - Download VPN client
+Step 5: Go to Download folder and open that file to install it.
+        Go to PC setting, select Network & Internet, then VPN and you will see 'vnetp2s' connection
+
